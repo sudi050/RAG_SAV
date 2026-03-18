@@ -108,7 +108,7 @@ print(f"\nBest α on dev (by MRR): {best_alpha}")
 print("\n── TEST SPLIT — Best alpha ──────────────────────")
 test_result = evaluate_combined(test_df, test_global_idx, best_alpha, "Test")
 
-with open("il_pcsr/bm25_results.json") as f:
+with open("results/maps/bm25_results.json") as f:
     bm25_results = json.load(f)
 
 bm25_test = bm25_results["test"]
